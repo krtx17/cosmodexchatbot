@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosmodex — Learn. Explore. Level Up.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ANIMATED STAR BACKGROUND -->
+<canvas id="star-canvas"></canvas>
+
+<!-- ══ NAVBAR ══ -->
+<nav>
+  <span class="nav-logo">✦ COSMODEX</span>
+  <ul class="nav-links">
+    <li><a href="#">Explore</a></li>
+    <li><a href="#">Galaxy Map</a></li>
+    <li><a href="#">Leaderboard</a></li>
+    <li><a href="#">Missions</a></li>
+  </ul>
+  <button class="nav-cta">Launch →</button>
+</nav>
+
+<!-- ══ HERO SECTION ══ -->
+<section class="hero">
+  <div class="orbit-ring r1"></div>
+  <div class="orbit-ring r2"></div>
+  <div class="orbit-ring r3"></div>
+
+  <div class="hero-badge">
+    <span class="dot"></span>
+    New Galaxy Unlocked — AI Learning 3.0
+  </div>
+
+  <h1>
+    <div class="line1">Navigate the</div>
+    <div class="line2">Learning Universe</div>
+  </h1>
+
+  <p class="hero-sub">
+    Cosmodex turns your tech journey into an epic space mission.
+    Earn XP, unlock galaxies, and level up with AI-guided learning
+    paths — built for the next generation of developers.
+  </p>
+
+  <div class="hero-buttons">
+    <button class="btn-primary">🚀 Start Your Mission</button>
+    <button class="btn-secondary">🗺 Explore Galaxy Map</button>
+  </div>
+</section>
+
+<!-- ══ STATS STRIP ══ -->
+<div class="stats">
+  <div class="stat-item">
+    <div class="stat-num">50+</div>
+    <div class="stat-label">Tech Stacks</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">200+</div>
+    <div class="stat-label">Projects</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">300+</div>
+    <div class="stat-label">Courses</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">∞</div>
+    <div class="stat-label">XP to Earn</div>
+  </div>
+</div>
+
+<!-- ══ FEATURES SECTION ══ -->
+<section class="features">
+  <div class="section-label">Why Cosmodex</div>
+  <div class="section-title">Your Learning, Gamified</div>
+  <div class="feature-grid">
+
+    <div class="feature-card">
+      <div class="feature-icon">🗺️</div>
+      <h3>Galaxy Learning Map</h3>
+      <p>Visual constellation-style map showing your entire learning journey.
+         Each skill is a star — connect them to form constellations of knowledge.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">⭐</div>
+      <h3>XP & Star Points</h3>
+      <p>Every lesson, quiz, and project earns you XP. Rise through ranks
+         from Cadet to Galactic Commander as you master new tech stacks.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🤖</div>
+      <h3>CosmBot AI Guide</h3>
+      <p>Your personal AI navigator. Ask about any tech stack and get
+         curated course + project recommendations tailored to your level.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🏆</div>
+      <h3>Mission Leaderboard</h3>
+      <p>Compete with fellow learners galaxy-wide. Climb the leaderboard,
+         earn badges, and prove you are the top commander of your cohort.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <h3>Skill Missions</h3>
+      <p>Structured learning missions that take you from zero to hero in
+         any tech stack — with clear milestones and rewards at every stage.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🪐</div>
+      <h3>Planet Projects</h3>
+      <p>Build real-world projects mapped to planets. Each project you
+         complete unlocks a new planet in your personal galaxy.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section class="how">
+  <div class="how-inner">
+    <div class="section-label">The Process</div>
+    <div class="section-title">How It Works</div>
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>Pick Your Stack</h4>
+        <p>Tell CosmBot what you know and what you want to learn.
+           It maps your galaxy instantly.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>Get Your Path</h4>
+        <p>Receive a personalized learning path with courses and
+           projects ordered by difficulty.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>Complete Missions</h4>
+        <p>Finish courses, build projects, pass quizzes — earn XP
+           and unlock new galaxies.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">04</div>
+        <h4>Level Up</h4>
+        <p>Rise from Cadet to Galactic Commander. Show your rank
+           to the world on the leaderboard.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <span class="footer-logo">✦ COSMODEX</span>
+  <p>© 2025 Cosmodex. All rights reserved. Made with 🚀 for next-gen developers.</p>
+</footer>
+
+<!-- ══════════════════════════════════
+     CHATBOT UI
+════════════════════════════════════ -->
+
+<!-- Floating chatbot button -->
+<button id="chat-toggle" title="Chat with CosmBot">
+  🤖
+  <span class="chat-badge">1</span>
+</button>
+
+<!-- Chat popup window -->
+<div id="chat-window">
+
+  <!-- Header -->
+  <div class="chat-header">
+    <div class="chat-avatar">🤖</div>
+    <div class="chat-header-info">
+      <h3>CosmBot</h3>
+      <div class="chat-status">Online — AI Navigator</div>
+    </div>
+    <button class="chat-close" id="chat-close">✕</button>
+  </div>
+
+  <!-- Messages area -->
+  <div id="chat-messages"></div>
+
+  <!-- Quick chip buttons -->
+  <div class="quick-chips" id="quick-chips">
+    <span class="chip" onclick="sendChip(this)">👋 Hi CosmBot!</span>
+    <span class="chip" onclick="sendChip(this)">🐍 Python path</span>
+    <span class="chip" onclick="sendChip(this)">⚛️ React projects</span>
+    <span class="chip" onclick="sendChip(this)">🗺️ How to use Cosmodex?</span>
+    <span class="chip" onclick="sendChip(this)">🧠 I am a beginner</span>
+    <span class="chip" onclick="sendChip(this)">💪 Motivate me!</span>
+  </div>
+
+  <!-- Input row -->
+  <div class="chat-input-row">
+    <input id="chat-input" type="text" placeholder="Ask CosmBot anything..." autocomplete="off"/>
+    <button id="send-btn">➤</button>
+  </div>
+
+</div>
+
+<!-- Load scripts in correct order -->
+<script src="config.js"></script>
+<script src="dataset.js"></script>
+<script src="chatbot.js"></script>
+
+</body>
+</html>
